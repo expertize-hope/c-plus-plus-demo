@@ -28,3 +28,7 @@ string encryptData(string data) {
     }
     return data;
 }
+
+void logAction(string action) {
+    cout << "[LOG]: " << action << " has been executed." << endl;
+}
