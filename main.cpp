@@ -20,3 +20,11 @@ bool isSecure(string pwd) {
     
     return hasNum && isLongEnough;
 }
+
+string encryptData(string data) {
+    // Caesar Cipher sederhana: geser 3 karakter
+    for(int i = 0; i < data.length(); i++) {
+        data[i] = data[i] + 3;
+    }
+    return data;
+}
